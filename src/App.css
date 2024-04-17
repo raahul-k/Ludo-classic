@@ -39,6 +39,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  padding: 0.2em 0;
 }
 
 h1 {
