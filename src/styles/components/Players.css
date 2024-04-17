@@ -28,16 +28,8 @@
 }
 
 .player {
-  font-size: 20px;
   padding: 1rem 0;
   border: none;
   border-radius: 5px;
   color: white;
-}
-
-@media (min-width: 1024px) {
-  .players {
-    grid-area: 3/1/4/3;
-    width: 35vw;
-  }
 }

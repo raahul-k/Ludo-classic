@@ -19,8 +19,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
-  border-radius: 5px;
 }
 
 /*
@@ -142,10 +140,8 @@
 
 .roll-btn-container {
   width: 100%;
-  /* font-size: 2em; */
   cursor: pointer;
   transition: 0.4s;
-  font-size: 20px;
 }
 
 .roll:hover {
@@ -158,27 +154,8 @@
   color: white;
   width: 100%;
   border-radius: 0;
-  font-size: 0.7em;
 }
 
 .dice-value {
   display: none;
-}
-
-@media (min-width: 648px) {
-  .btn-dice {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 728px) {
-  .face::after {
-    width: 15%;
-  }
-}
-
-@media (min-width: 1248px) {
-  .dice-container {
-    grid-area: 5/4/7/6;
-    height: 200px;
-  }
 }

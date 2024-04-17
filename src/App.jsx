@@ -16,7 +16,7 @@ function App() {
       {startFlag && <Start></Start>}
       {!startFlag && formFlag && <Form></Form>}
       {!startFlag && !formFlag && (
-        <div className="ludo-container">
+        <div className="ludo-container container">
           <Heading mode={mode}></Heading>
           <Ludo></Ludo>
           <SideBar></SideBar>

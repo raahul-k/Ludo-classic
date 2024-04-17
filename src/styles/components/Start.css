@@ -29,7 +29,6 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  font-size: 25px;
   letter-spacing: 0.1rem;
   animation: blink 1s infinite linear;
   cursor: pointer;

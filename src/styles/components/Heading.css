@@ -1,17 +1,8 @@
 .heading {
   color: var(--clr-border);
-  font-size: 3em;
   font-weight: 740;
   letter-spacing: 0.05em;
-  border: 2px solid blue;
   width: 100%;
   text-align: left;
-  border-radius: 5px;
-}
-
-@media (min-width: 1248px) {
-  .mobile-heading {
-    grid-area: 1/2/2/3;
-    text-align: left;
-  }
+  margin: 0;
 }

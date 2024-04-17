@@ -7,9 +7,9 @@ const Heading = (props) => {
   };
   const mode = props.mode;
   return (
-    <div className={`heading ${mode}-heading`} onClick={handleTurn}>
+    <h1 className={`heading ${mode}-heading`} onClick={handleTurn}>
       LUDO
-    </div>
+    </h1>
   );
 };
 

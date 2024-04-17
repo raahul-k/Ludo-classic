@@ -31,7 +31,6 @@ form {
   gap: 20px;
 }
 .form-heading {
-  font-size: 30px;
   color: var(--clr-border);
   font-weight: 500;
 }

@@ -11,9 +11,7 @@ const TurnInfo = () => {
         <NewGameBtn></NewGameBtn>
       </div>
       <div className="active-player">
-        <p>
-          Now <br></br> playing
-        </p>
+        <p>Now playing</p>
         <span>Rahul</span>
       </div>
       <Dice></Dice>

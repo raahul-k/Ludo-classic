@@ -9,25 +9,8 @@
   background-color: var(--clr-blue);
   border-radius: 5px;
   color: white;
-  font-size: 0.6em;
-  border: 2px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: 648px) {
-  .reset-btn-container {
-    font-size: 2em;
-  }
-}
-@media (min-width: 728px) {
-  .reset-btn-container {
-    font-size: 1.8em;
-  }
-}
-@media (min-width: 1248px) {
-  .reset-btn-container {
-    width: 100%;
-  }
+  font-size: 12px;
 }
