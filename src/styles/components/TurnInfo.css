@@ -1,6 +1,6 @@
 .turninfo {
   width: 100%;
-  height: 13em;
+  height: 10em;
   display: grid;
   grid-gap: 0.5em;
   grid-template-rows: repeat(6, 1fr);
@@ -45,46 +45,46 @@
 
 @media (min-width: 648px) {
   .turninfo {
-    height: 15em;
+    height: 12em;
   }
   .active-player span {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .active-player p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0.5em;
   }
 }
 
 @media (min-width: 728px) {
   .turninfo {
-    height: 15em;
+    height: 14em;
   }
 
   .active-player span {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 
   .active-player p {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .setGameBtns {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 @media (min-width: 940px) {
   .turninfo {
-    height: 18em;
+    height: 15em;
   }
 
   .active-player span {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .active-player p {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 
