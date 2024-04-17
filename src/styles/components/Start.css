@@ -1,0 +1,45 @@
+.start {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 60px;
+}
+
+.start-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.start-heading img {
+  width: 100px;
+  height: 100px;
+}
+
+.start-btn {
+  background-color: var(--clr-border);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  animation: blink 1s infinite linear;
+  cursor: pointer;
+}
+@keyframes blink {
+  50% {
+    transform: scale(1.1);
+  }
+}
+.start-btn img {
+  width: 50px;
+  height: 50px;
+}

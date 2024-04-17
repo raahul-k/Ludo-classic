@@ -1,0 +1,45 @@
+.player-pieces {
+  height: 100%;
+  width: 100%;
+}
+
+.player-piece {
+  width: 3%;
+  height: 3%;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.player-piece.highlight {
+  cursor: pointer;
+  border: 2px dashed;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: translate(65%, 80%) rotate(0deg);
+  }
+  50% {
+    transform: translate(65%, 80%) rotate(180deg) scale(1.4);
+  }
+  100% {
+    transform: translate(65%, 80%) rotate(360deg);
+  }
+}
+
+[player-id="P1"].player-piece {
+  background-color: var(--clr-grey);
+}
+
+[player-id="P2"].player-piece {
+  background-color: var(--clr-blue);
+}
+
+[player-id="P3"].player-piece {
+  background-color: var(--clr-green);
+}
+
+[player-id="P4"].player-piece {
+  background-color: var(--clr-orange);
+}

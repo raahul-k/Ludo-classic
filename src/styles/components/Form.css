@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border: 2px solid var(--clr-border);
+  padding: 4em 3em;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.players-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form-heading {
+  font-size: 30px;
+  color: var(--clr-border);
+  font-weight: 500;
+}
+
+.disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.play-btn {
+  background-color: var(--clr-border);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+/* .play-btn:disabled {
+  opacity: 0.7;
+} */
+
+.players-info-container input {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+}
+.players-info-container input::placeholder {
+  color: white;
+}
+.players-info-container > input:nth-child(1) {
+  background-color: var(--clr-grey);
+}
+.players-info-container > input:nth-child(2) {
+  background-color: var(--clr-blue);
+}
+.players-info-container > input:nth-child(3) {
+  background-color: var(--clr-green);
+}
+.players-info-container > input:nth-child(4) {
+  background-color: var(--clr-orange);
+}
+
+.radio-options input[type="radio"] {
+  display: none;
+}
+
+.radio-options label {
+  background-color: transparent;
+  border: 1px solid var(--clr-border);
+  border-radius: 5px;
+  padding: 0.4rem 1.4rem;
+}
+.radio-options input:checked + label {
+  background-color: var(--clr-border);
+  color: white;
+}
+
+input:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}

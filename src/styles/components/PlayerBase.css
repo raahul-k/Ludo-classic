@@ -1,0 +1,60 @@
+.player-base {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: absolute;
+  border-radius: 0 0 0 5px;
+  font-size: 25px;
+  border: 2px solid red;
+}
+
+.player-bases [player-id="P1"].player-base {
+  bottom: 0;
+  left: 0;
+  border-color: #423e3b;
+  border-radius: 0 0 0 5px;
+}
+.player-bases [player-id="P2"].player-base {
+  right: 0px;
+  top: 0;
+  border-color: #8789c0;
+  border-radius: 0 5px 0 0;
+}
+.player-bases [player-id="P3"].player-base {
+  left: 0;
+  top: 0;
+  border-color: #8789c0;
+  border-radius: 0 5px 0 0;
+}
+.player-bases [player-id="P4"].player-base {
+  right: 0px;
+  bottom: 0;
+  border-color: #8789c0;
+  border-radius: 0 5px 0 0;
+}
+
+.player-base {
+  border: 2px solid black;
+}
+
+.player-base.highlight {
+  animation: border-blink 0.7s infinite ease-in-out;
+}
+@keyframes border-blink {
+  50% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.player-base-name {
+  padding: 0 0.6em;
+  color: white;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.302);
+  border-radius: 5px;
+}

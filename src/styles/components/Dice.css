@@ -1,0 +1,179 @@
+/*
+    General Styles
+*/
+
+.dice-container {
+  grid-area: 1/4/7/6;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid var(--clr-blue);
+}
+
+.diceContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+/*
+      Dice Styles
+  */
+
+.dice {
+  position: relative;
+  width: 30%;
+  height: auto;
+  aspect-ratio: 1/1;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+  border: 2px solid green;
+  /* animation: rolling 1s infinite linear; */
+}
+
+@keyframes rolling {
+  50% {
+    transform: rotateX(455deg) rotateY(455deg);
+  }
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid #f6f3f0;
+  transform-style: preserve-3d;
+  background: linear-gradient(145deg, #dddbd8, #fff);
+}
+
+.face::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+  background: #f6f3f0;
+  transform: translateZ(-1px);
+}
+
+.face::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 100%;
+  width: 20%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #131210;
+}
+
+.front {
+  transform: rotateX(180deg) translateZ(27px);
+}
+
+.back {
+  transform: rotateX(0deg) translateZ(27px);
+}
+
+.top {
+  transform: rotateX(-90deg) translateZ(27px);
+}
+.bottom {
+  transform: rotateX(90deg) translateZ(27px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(27px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(27px);
+}
+
+.dice {
+  transform: rotateX(180deg) rotateY(270deg);
+}
+
+.front::after {
+  width: 20%;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: #f63330;
+  margin: -58% 0 0 -58%;
+}
+
+.back::after {
+  margin: -82% 0 0 -79%;
+  box-shadow: 20px 0px, 0 12.5px, 20px 12.5px, 0 25px, 20px 25px;
+}
+
+.top::after {
+  margin: -80% 0 0 -80%;
+  box-shadow: 20px 20px;
+}
+
+.bottom::after {
+  margin: -85% 0 0 -85%;
+  box-shadow: 12.5px 12.5px, 26px 26px, 26px 0, 0 26px;
+}
+
+.right::after {
+  margin: -80% 0 0 -80%;
+  box-shadow: 20px 0, 0 20px, 20px 20px;
+}
+
+.left::after {
+  margin: -80% 0 0 -80%;
+  box-shadow: 12px 12px, 24px 24px;
+}
+
+/*
+      Roll Button styles
+  */
+
+.roll-btn-container {
+  width: 100%;
+  /* font-size: 2em; */
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.roll:hover {
+  color: #fff;
+  background: #b33951;
+}
+
+.btn-dice {
+  background-color: var(--clr-blue);
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  font-size: 0.7em;
+}
+
+.dice-value {
+  display: none;
+}
+
+@media (min-width: 728px) {
+  .face::after {
+    width: 15%;
+  }
+}
+
+@media (min-width: 1248px) {
+  .dice-container {
+    grid-area: 5/4/7/6;
+    height: 200px;
+  }
+}

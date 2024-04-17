@@ -1,0 +1,23 @@
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.dynamicgameinfo {
+  margin-top: 20px;
+  max-width: 60ch;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media (min-width: 1248px) {
+  .sidebar {
+    grid-area: 2/2/3/3;
+    width: 20vw;
+  }
+}
