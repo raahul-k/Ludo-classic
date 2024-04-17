@@ -124,6 +124,11 @@ button:focus-visible {
   display: none;
 }
 
+@media (min-width: 728px) {
+  .ludo-container {
+    width: 70vw;
+  }
+}
 @media (min-width: 1024px) {
   .ludo-container {
     width: 85vw;

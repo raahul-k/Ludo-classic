@@ -16,6 +16,16 @@
   align-items: center;
 }
 
+@media (min-width: 648px) {
+  .newGame-btn-container {
+    font-size: 2em;
+  }
+}
+@media (min-width: 728px) {
+  .newGame-btn-container {
+    font-size: 1.8em;
+  }
+}
 @media (min-width: 1248px) {
   .newGame-btn-container {
     width: 100%;
