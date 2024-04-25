@@ -6,6 +6,8 @@ const playerPieces = document.querySelector(".player-pieces");
 const playerPiecesElements = {
   P1: document.querySelectorAll('[player-id="P1"].player-piece'),
   P2: document.querySelectorAll('[player-id="P2"].player-piece'),
+  P3: document.querySelectorAll('[player-id="P3"].player-piece'),
+  P4: document.querySelectorAll('[player-id="P4"].player-piece'),
 };
 
 export class UI {
@@ -28,6 +30,7 @@ export class UI {
    * @param {Number} newPosition
    */
   static setPiecePosition(player, piece, newPosition) {
+    console.log("UI.setPiecePosition ran");
     if (!playerPiecesElements[player] || !playerPiecesElements[player][piece]) {
       console.error(
         `Player element of given player: ${player} and piece ${piece} not found`

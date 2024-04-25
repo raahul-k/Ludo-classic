@@ -5,30 +5,30 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  gap: 60px;
+  gap: 30px;
 }
 
 .start-heading {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .start-heading img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .start-btn {
   background-color: var(--clr-border);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 5px;
   letter-spacing: 0.1rem;
   animation: blink 1s infinite linear;
   cursor: pointer;
@@ -39,6 +39,6 @@
   }
 }
 .start-btn img {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
 }

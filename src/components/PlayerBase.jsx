@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 import "../styles/components/PlayerBase.css";
 import { useDispatch, useSelector } from "react-redux";
 
 const PlayerBase = () => {
   const players = useSelector((state) => state.players.players);
+  const turn = useSelector((state) => state.currentTurn.currentTurn);
+  const numPlayers = useSelector((state) => state.numPlayers.numPlayers);
 
   const renderDivs = (obj) => {
     const divs = [];
@@ -17,6 +20,26 @@ const PlayerBase = () => {
     }
     return divs;
   };
+
+  useEffect(() => {
+    console.log("NumPlayers", numPlayers);
+    const players = document.querySelectorAll(".player-base");
+    console.log("Current Turn", turn);
+    console.log(players[turn].classList);
+    if (players) {
+      if (turn === 0) {
+        if (players[numPlayers - 1].classList.contains("highlight")) {
+          players[numPlayers - 1].classList.remove("highlight");
+        }
+      } else if (turn !== 0) {
+        players[turn - 1].classList.remove("highlight");
+      }
+      players[turn].classList.add("highlight");
+    } else {
+      return;
+    }
+  }, [turn]);
+
   return (
     <div className="player-bases">
       {renderDivs(players)}

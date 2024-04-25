@@ -5,11 +5,14 @@ import SideBar from "./components/SideBar";
 import Start from "./components/Start";
 import Form from "./components/Form";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 function App() {
   const startFlag = useSelector((state) => state.startFlag.startFlag);
   const formFlag = useSelector((state) => state.formFlag.formFlag);
   const mode = "mobile";
+
+  const currentTurn = useSelector((state) => state.currentTurn.currentTurn);
 
   return (
     <div className="app">

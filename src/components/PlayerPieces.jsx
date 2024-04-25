@@ -1,8 +1,37 @@
+import { useEffect } from "react";
 import "../styles/components/PlayerPieces.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setPlayerArray } from "../redux/states/selectPlayersSlice";
+import { BASE_POSITIONS } from "../../logic/constants";
+import { UI } from "../../logic/UI";
 
 const PlayerPieces = () => {
   const players = useSelector((state) => state.players.players);
+  const dispatch = useDispatch();
+  // const playerPiecesElements = {
+  //   P1: document.querySelectorAll('[player-id="P1"].player-piece'),
+  //   P2: document.querySelectorAll('[player-id="P2"].player-piece'),
+  //   P3: document.querySelectorAll('[player-id="P3"].player-piece'),
+  //   P4: document.querySelectorAll('[player-id="P4"].player-piece'),
+  // };
+
+  // useEffect(() => {
+  //   console.log("Use effect ran");
+  //   playerPiecesElements.forEach(([key, value]) => {
+  //     dispatch(setPlayerArray({ player: key, array: value }));
+  //   });
+  // }, []);
+
+  // useEffect(() => {
+  //   setPiece;
+  // }, [playerPiecesElements]);
+
+  // const setPositions = async (divs, key, i, count) => {
+  //   await divs.push(
+  //     <div className="player-piece" player-id={key} piece={i} key={count}></div>
+  //   );
+  //   UI.setPiecePosition(key, i, BASE_POSITIONS[key][i]);
+  // };
 
   const renderDivs = (obj) => {
     const divs = [];
@@ -11,14 +40,7 @@ const PlayerPieces = () => {
       if (obj[key]) {
         for (let i = 0; i < 4; i++) {
           count++;
-          divs.push(
-            <div
-              className="player-piece"
-              player-id={key}
-              piece={i}
-              key={count}
-            ></div>
-          );
+          setPositions(divs, key, i, count);
         }
       }
     }

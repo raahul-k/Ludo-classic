@@ -9,7 +9,7 @@ export const turnSlice = createSlice({
   initialState,
   reducers: {
     incrementTurn: (state, action) => {
-      const numPlayers = action.payload.numPlayers;
+      const numPlayers = action.payload;
       let nextTurn = state.currentTurn + 1;
       if (nextTurn >= numPlayers) {
         nextTurn = 0;

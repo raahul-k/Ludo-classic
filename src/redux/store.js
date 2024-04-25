@@ -6,6 +6,7 @@ import setPlayersSlice from "./states/setPlayersSlice";
 import diceSlice from "./states/diceSlice";
 import diceStateSlice from "./states/diceStateSlice";
 import turnSlice from "./states/turnSlice";
+import selectPlayersSlice from "./states/selectPlayersSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export const store = configureStore({
     diceValue: diceSlice,
     diceState: diceStateSlice,
     currentTurn: turnSlice,
+    playerPiecesElements: selectPlayersSlice,
   },
 });
